@@ -1,13 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
+
+set(CMAKE_CXX_STANDARD 14)
+
 project(tensorflow-runner)
 
-set (CMAKE_CXX_STANDARD 11)
-
-find_package(Threads REQUIRED)
-find_package(TensorflowCC COMPONENTS Shared)
-
+include_directories(.)
 add_subdirectory(bench)
+add_subdirectory(src)
 
-add_executable(tensorflow-runner main.cpp)
-target_link_libraries(tensorflow-runner TensorflowCC::Shared)
 
