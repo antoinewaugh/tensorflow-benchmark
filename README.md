@@ -1,7 +1,7 @@
 # tensorflow-benchmark
 benchmarking tool for hitting TF graph.
 
-# install tensorflow-cc shared lib for cmake
+## install tensorflow-cc shared lib for cmake
 ```
 git clone https://github.com/FloopCZ/tensorflow_cc.git
 cd tensorflow_cc
@@ -10,7 +10,7 @@ cmake -DTENSORFLOW_STATIC=OFF -DTENSORFLOW_SHARED=ON ..
 make && sudo make install
 ```
 
-# install tensorflow-benchmark
+## install tensorflow-benchmark
 ```
 git clone https://github.com/antoinewaugh/tensorflow-benchmark.git
 cd tensorflow-benchmark
