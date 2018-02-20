@@ -7,11 +7,12 @@ using namespace tensorflow;
 
 int main(int argc, char *argv[])
 {
-        if (argc <= 1) {
+/*        if (argc <= 1) {
 		std::cout << "Usage: tensorflow-benchmark /path/to/*.pb" << '\n';
-        }
+        }*/
 
-	std::string pathToGraph(argv[1]);
+//	std::string pathToGraph(argv[1]);
+	std::string pathToGraph("../graph/frozen_model.pb");
 
 	// Initialize a tensorflow session
 	Session *session;
